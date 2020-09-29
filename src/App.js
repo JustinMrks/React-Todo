@@ -61,8 +61,9 @@ class App extends React.Component {
   // this component is going to take care of state, and any change handlers you need to work with your state
   render() {
     return (
-      <div>
-        <div>
+      <div className='App'>
+        <div className='header'>
+          <h1>Todo List</h1>
           <TodoForm addTask={this.addTask}/>
         </div>
         <div>

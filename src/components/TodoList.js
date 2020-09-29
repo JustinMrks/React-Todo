@@ -7,12 +7,12 @@ import Todo from "./Todo";
 const TodoList = (props) => {
     console.log(props.todoList)
     return(<div>
-        <div>
+        <div className='shopping-list'>
             {props.todoList.map(task => (
                 <Todo key={task.id} task={task} toggleComplete={props.toggleComplete}/>
             ))}
         </div>
-        <button onClick={props.clearComplete}>Clear Completed</button>
+        <button className="clear-btn" onClick={props.clearComplete}>Clear Completed</button>
     </div>)
 }
 
